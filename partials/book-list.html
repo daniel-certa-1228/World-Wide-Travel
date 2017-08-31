@@ -1,0 +1,13 @@
+<article class="book-list">
+	<header>
+		<h2>Guide Books</h2>
+	</header>
+
+	<section>
+		<div ng-repeat="item in books">
+			<h4>{{item.title}}</h4>
+			<p>Type: {{item.type}}</p>
+			<p>Price: ${{item.price}}</p>
+		</div>
+	</section>
+</article>

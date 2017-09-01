@@ -6,8 +6,9 @@
 	<section>
 		<div ng-repeat="item in books">
 			<h4>{{item.title}}</h4>
-			<p>Type: {{item.type}}</p>
-			<p>Price: ${{item.price}}</p>
+			<p>Type: {{item.type | uppercase}}</p>
+			<p>Price: {{item.price | currency}}</p>
+			<hr>
 		</div>
 	</section>
 </article>

@@ -1,6 +1,6 @@
 "use strict";
 console.log( "bookCtrl.js" );
-
+ 
 app.controller('BookCtrl', function($scope, BookFactory) {
 	BookFactory.getBooks()
 	.then(function(bookCollection){
